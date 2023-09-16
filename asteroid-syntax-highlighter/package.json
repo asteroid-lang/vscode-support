@@ -1,0 +1,35 @@
+{
+    "name": "asteroid-syntax-highlighter",
+    "displayName": "Asteroid Syntax Highlighter",
+    "description": "A limited Asteroid syntax highlighter.",
+    "version": "1.0.0",
+    "publisher": "University of Rhode Island",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "icon": "images/icon32.png",
+    "contributes": {
+        "languages": [
+            {
+                "id": "asteroid",
+                "aliases": [
+                    "asteroid"
+                ],
+                "extensions": [
+                    "ast"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "asteroid",
+                "scopeName": "source.ast",
+                "path": "./syntaxes/asteroid.tmLanguage.json"
+            }
+        ]
+    }
+}
